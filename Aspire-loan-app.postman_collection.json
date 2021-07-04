@@ -1,0 +1,422 @@
+{
+	"info": {
+		"_postman_id": "b37972b3-841a-4f96-96b2-c5fe400aeb64",
+		"name": "Aspire-loan-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Puneet\",\n    \"phone\": \"+9175058058166\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Puneet\",\n    \"phone\": \"+9175058058166\",\n    \"password\": \"189456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.39"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Jul 2021 16:40:48 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"message\": \"USER_ADDED_SUCCESSFULLY\",\n    \"data\": {\n        \"customer_id\": 1196994,\n        \"name\": \"Puneet\",\n        \"phone\": \"+9175058058166\",\n        \"password\": \"8f6b26a962bf53f855306f37f2ffc553\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer_id\":\"4344418\",\n    \"password\": \"123456\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": "{\n    \"customer_id\":\"4344418\",\n    \"password\": \"123456\" \n}"
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customer_id\":\"4344418\",\n    \"password\": \"123456\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.39"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Jul 2021 17:10:57 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"message\": \"USER_LOGIN_SUCCESS\",\n    \"data\": {\n        \"authtoken\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImFmMjQwY2JjOWZlMjhhMzQ2M2IxMWNjNDhjMjhlNDI1NGJmY2VmZDEzOWNkNmU2Njc1NzU5NjM4ZmZjNTUwOWE0MTA3MTc2YTQwOGM3YTZlIn0.eyJhdWQiOiIxIiwianRpIjoiYWYyNDBjYmM5ZmUyOGEzNDYzYjExY2M0OGMyOGU0MjU0YmZjZWZkMTM5Y2Q2ZTY2NzU3NTk2MzhmZmM1NTA5YTQxMDcxNzZhNDA4YzdhNmUiLCJpYXQiOjE2MjUzMzIyNTcsIm5iZiI6MTYyNTMzMjI1NywiZXhwIjoxNjU2ODY4MjU3LCJzdWIiOiI5Iiwic2NvcGVzIjpbXX0.WkfxDjVsWtjC0CDqMbkyktWfDaY5qAw0B9mA8U6GlHgvint9o6igag6ls7mOMvhuGo7GRhRJKBZG1EA4Cvv0UlFetjK9v7FXx2UCbsRewbp_QEFdagfcX-eorvKLSLuDrWQMvjSE49AWxi7dI4nc3IYrE3U1H9ds3y-FqeYxDNJR9ZKc3MHvBRjYIYBSaGNzJI7-ulJHhA4jHfVxwiAFFL840vLJTxh8A-A5yYFticXnj-pfyixuGr2X2D-ai9li4l9xmUPvwa2qDCE7YuunH0rGgkpZViLqHwPHhpl2qulD5ryhJ0oJHIo0txwLDS7sOCCPtYYEGi5P2rg7LesGg4MaGNsnpMim20oqezOn0pYORHgsLvhXXnUau7LWUEgQALbpAdP2782Zspz7BV69va76W47KVnCS3LVDJ2U1P_ynhdKG2UfMlY__pTzuFwGUVroTWhnOFy79tq5wS78t2q_O5YtIxmlZ6puVaZdiDD90tBc0axCC6qaYVDthaGqDZs7Ylmrn1gVnzjjUk9Ql2lf1FOE_5JUkTDkmpY9D3pbSeKJi9dIEdMTW5UG4EEcKux5D9QBkSxa96PjmQxvxnegWvSoxQDDbPz8ykYDk6Aimyu6lBqUeReRID_jFklalQ6Um6BR6V5jabjEgxXTKHK78Dmfd4CczMxrY8DiZjhg\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Loan Apply",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImFmMjQwY2JjOWZlMjhhMzQ2M2IxMWNjNDhjMjhlNDI1NGJmY2VmZDEzOWNkNmU2Njc1NzU5NjM4ZmZjNTUwOWE0MTA3MTc2YTQwOGM3YTZlIn0.eyJhdWQiOiIxIiwianRpIjoiYWYyNDBjYmM5ZmUyOGEzNDYzYjExY2M0OGMyOGU0MjU0YmZjZWZkMTM5Y2Q2ZTY2NzU3NTk2MzhmZmM1NTA5YTQxMDcxNzZhNDA4YzdhNmUiLCJpYXQiOjE2MjUzMzIyNTcsIm5iZiI6MTYyNTMzMjI1NywiZXhwIjoxNjU2ODY4MjU3LCJzdWIiOiI5Iiwic2NvcGVzIjpbXX0.WkfxDjVsWtjC0CDqMbkyktWfDaY5qAw0B9mA8U6GlHgvint9o6igag6ls7mOMvhuGo7GRhRJKBZG1EA4Cvv0UlFetjK9v7FXx2UCbsRewbp_QEFdagfcX-eorvKLSLuDrWQMvjSE49AWxi7dI4nc3IYrE3U1H9ds3y-FqeYxDNJR9ZKc3MHvBRjYIYBSaGNzJI7-ulJHhA4jHfVxwiAFFL840vLJTxh8A-A5yYFticXnj-pfyixuGr2X2D-ai9li4l9xmUPvwa2qDCE7YuunH0rGgkpZViLqHwPHhpl2qulD5ryhJ0oJHIo0txwLDS7sOCCPtYYEGi5P2rg7LesGg4MaGNsnpMim20oqezOn0pYORHgsLvhXXnUau7LWUEgQALbpAdP2782Zspz7BV69va76W47KVnCS3LVDJ2U1P_ynhdKG2UfMlY__pTzuFwGUVroTWhnOFy79tq5wS78t2q_O5YtIxmlZ6puVaZdiDD90tBc0axCC6qaYVDthaGqDZs7Ylmrn1gVnzjjUk9Ql2lf1FOE_5JUkTDkmpY9D3pbSeKJi9dIEdMTW5UG4EEcKux5D9QBkSxa96PjmQxvxnegWvSoxQDDbPz8ykYDk6Aimyu6lBqUeReRID_jFklalQ6Um6BR6V5jabjEgxXTKHK78Dmfd4CczMxrY8DiZjhg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 100,\n    \"loan_term\":7\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/loan-apply",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"loan-apply"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Loan Apply",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImFmMjQwY2JjOWZlMjhhMzQ2M2IxMWNjNDhjMjhlNDI1NGJmY2VmZDEzOWNkNmU2Njc1NzU5NjM4ZmZjNTUwOWE0MTA3MTc2YTQwOGM3YTZlIn0.eyJhdWQiOiIxIiwianRpIjoiYWYyNDBjYmM5ZmUyOGEzNDYzYjExY2M0OGMyOGU0MjU0YmZjZWZkMTM5Y2Q2ZTY2NzU3NTk2MzhmZmM1NTA5YTQxMDcxNzZhNDA4YzdhNmUiLCJpYXQiOjE2MjUzMzIyNTcsIm5iZiI6MTYyNTMzMjI1NywiZXhwIjoxNjU2ODY4MjU3LCJzdWIiOiI5Iiwic2NvcGVzIjpbXX0.WkfxDjVsWtjC0CDqMbkyktWfDaY5qAw0B9mA8U6GlHgvint9o6igag6ls7mOMvhuGo7GRhRJKBZG1EA4Cvv0UlFetjK9v7FXx2UCbsRewbp_QEFdagfcX-eorvKLSLuDrWQMvjSE49AWxi7dI4nc3IYrE3U1H9ds3y-FqeYxDNJR9ZKc3MHvBRjYIYBSaGNzJI7-ulJHhA4jHfVxwiAFFL840vLJTxh8A-A5yYFticXnj-pfyixuGr2X2D-ai9li4l9xmUPvwa2qDCE7YuunH0rGgkpZViLqHwPHhpl2qulD5ryhJ0oJHIo0txwLDS7sOCCPtYYEGi5P2rg7LesGg4MaGNsnpMim20oqezOn0pYORHgsLvhXXnUau7LWUEgQALbpAdP2782Zspz7BV69va76W47KVnCS3LVDJ2U1P_ynhdKG2UfMlY__pTzuFwGUVroTWhnOFy79tq5wS78t2q_O5YtIxmlZ6puVaZdiDD90tBc0axCC6qaYVDthaGqDZs7Ylmrn1gVnzjjUk9Ql2lf1FOE_5JUkTDkmpY9D3pbSeKJi9dIEdMTW5UG4EEcKux5D9QBkSxa96PjmQxvxnegWvSoxQDDbPz8ykYDk6Aimyu6lBqUeReRID_jFklalQ6Um6BR6V5jabjEgxXTKHK78Dmfd4CczMxrY8DiZjhg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": 100,\n    \"loan_term\":7\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/loan-apply",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"loan-apply"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.39"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Jul 2021 07:20:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"message\": \"LOAN_APPLIED_SUCCESSFULLY\",\n    \"data\": [\n        {\n            \"user_id\": 9,\n            \"loan_id\": 3,\n            \"emi_amount\": 15,\n            \"week\": 1,\n            \"payment_status\": 0\n        },\n        {\n            \"user_id\": 9,\n            \"loan_id\": 3,\n            \"emi_amount\": 15,\n            \"week\": 2,\n            \"payment_status\": 0\n        },\n        {\n            \"user_id\": 9,\n            \"loan_id\": 3,\n            \"emi_amount\": 15,\n            \"week\": 3,\n            \"payment_status\": 0\n        },\n        {\n            \"user_id\": 9,\n            \"loan_id\": 3,\n            \"emi_amount\": 15,\n            \"week\": 4,\n            \"payment_status\": 0\n        },\n        {\n            \"user_id\": 9,\n            \"loan_id\": 3,\n            \"emi_amount\": 15,\n            \"week\": 5,\n            \"payment_status\": 0\n        },\n        {\n            \"user_id\": 9,\n            \"loan_id\": 3,\n            \"emi_amount\": 15,\n            \"week\": 6,\n            \"payment_status\": 0\n        },\n        {\n            \"user_id\": 9,\n            \"loan_id\": 3,\n            \"emi_amount\": 15,\n            \"week\": 7,\n            \"payment_status\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Pay EMI",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImFmMjQwY2JjOWZlMjhhMzQ2M2IxMWNjNDhjMjhlNDI1NGJmY2VmZDEzOWNkNmU2Njc1NzU5NjM4ZmZjNTUwOWE0MTA3MTc2YTQwOGM3YTZlIn0.eyJhdWQiOiIxIiwianRpIjoiYWYyNDBjYmM5ZmUyOGEzNDYzYjExY2M0OGMyOGU0MjU0YmZjZWZkMTM5Y2Q2ZTY2NzU3NTk2MzhmZmM1NTA5YTQxMDcxNzZhNDA4YzdhNmUiLCJpYXQiOjE2MjUzMzIyNTcsIm5iZiI6MTYyNTMzMjI1NywiZXhwIjoxNjU2ODY4MjU3LCJzdWIiOiI5Iiwic2NvcGVzIjpbXX0.WkfxDjVsWtjC0CDqMbkyktWfDaY5qAw0B9mA8U6GlHgvint9o6igag6ls7mOMvhuGo7GRhRJKBZG1EA4Cvv0UlFetjK9v7FXx2UCbsRewbp_QEFdagfcX-eorvKLSLuDrWQMvjSE49AWxi7dI4nc3IYrE3U1H9ds3y-FqeYxDNJR9ZKc3MHvBRjYIYBSaGNzJI7-ulJHhA4jHfVxwiAFFL840vLJTxh8A-A5yYFticXnj-pfyixuGr2X2D-ai9li4l9xmUPvwa2qDCE7YuunH0rGgkpZViLqHwPHhpl2qulD5ryhJ0oJHIo0txwLDS7sOCCPtYYEGi5P2rg7LesGg4MaGNsnpMim20oqezOn0pYORHgsLvhXXnUau7LWUEgQALbpAdP2782Zspz7BV69va76W47KVnCS3LVDJ2U1P_ynhdKG2UfMlY__pTzuFwGUVroTWhnOFy79tq5wS78t2q_O5YtIxmlZ6puVaZdiDD90tBc0axCC6qaYVDthaGqDZs7Ylmrn1gVnzjjUk9Ql2lf1FOE_5JUkTDkmpY9D3pbSeKJi9dIEdMTW5UG4EEcKux5D9QBkSxa96PjmQxvxnegWvSoxQDDbPz8ykYDk6Aimyu6lBqUeReRID_jFklalQ6Um6BR6V5jabjEgxXTKHK78Dmfd4CczMxrY8DiZjhg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"loan_id\" : 3,\n    \"amount\" : 15\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pay-emi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pay-emi"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Pay EMI",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImFmMjQwY2JjOWZlMjhhMzQ2M2IxMWNjNDhjMjhlNDI1NGJmY2VmZDEzOWNkNmU2Njc1NzU5NjM4ZmZjNTUwOWE0MTA3MTc2YTQwOGM3YTZlIn0.eyJhdWQiOiIxIiwianRpIjoiYWYyNDBjYmM5ZmUyOGEzNDYzYjExY2M0OGMyOGU0MjU0YmZjZWZkMTM5Y2Q2ZTY2NzU3NTk2MzhmZmM1NTA5YTQxMDcxNzZhNDA4YzdhNmUiLCJpYXQiOjE2MjUzMzIyNTcsIm5iZiI6MTYyNTMzMjI1NywiZXhwIjoxNjU2ODY4MjU3LCJzdWIiOiI5Iiwic2NvcGVzIjpbXX0.WkfxDjVsWtjC0CDqMbkyktWfDaY5qAw0B9mA8U6GlHgvint9o6igag6ls7mOMvhuGo7GRhRJKBZG1EA4Cvv0UlFetjK9v7FXx2UCbsRewbp_QEFdagfcX-eorvKLSLuDrWQMvjSE49AWxi7dI4nc3IYrE3U1H9ds3y-FqeYxDNJR9ZKc3MHvBRjYIYBSaGNzJI7-ulJHhA4jHfVxwiAFFL840vLJTxh8A-A5yYFticXnj-pfyixuGr2X2D-ai9li4l9xmUPvwa2qDCE7YuunH0rGgkpZViLqHwPHhpl2qulD5ryhJ0oJHIo0txwLDS7sOCCPtYYEGi5P2rg7LesGg4MaGNsnpMim20oqezOn0pYORHgsLvhXXnUau7LWUEgQALbpAdP2782Zspz7BV69va76W47KVnCS3LVDJ2U1P_ynhdKG2UfMlY__pTzuFwGUVroTWhnOFy79tq5wS78t2q_O5YtIxmlZ6puVaZdiDD90tBc0axCC6qaYVDthaGqDZs7Ylmrn1gVnzjjUk9Ql2lf1FOE_5JUkTDkmpY9D3pbSeKJi9dIEdMTW5UG4EEcKux5D9QBkSxa96PjmQxvxnegWvSoxQDDbPz8ykYDk6Aimyu6lBqUeReRID_jFklalQ6Um6BR6V5jabjEgxXTKHK78Dmfd4CczMxrY8DiZjhg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"loan_id\" : 3,\n    \"amount\" : 15\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pay-emi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pay-emi"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.39"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 04 Jul 2021 08:22:33 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 402,\n    \"message\": \" YOU_ALREADY_PAID_YOUR_EMI\",\n    \"data\": null\n}"
+				}
+			]
+		}
+	]
+}
