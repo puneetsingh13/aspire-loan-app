@@ -1,4 +1,4 @@
-# Laravel - Aspire Loan App
+# Laravel - Loan App
 
 # Composer Command
 - composer install
@@ -24,8 +24,5 @@
 - File in attached in this repo on root - Aspire-loan-app.postman_collection.json
 
 # NOTE:
-- My system configuration is not updated with new version and I have no much time to update.
-- I have PHP version 5.6.40 and MySql 5.6 -  So please take care of it
-- Also, I have try to use PHP unittest cases, but its not worked with this version and Also Passport taken is also depricated.
-- Hope you consider the business logic of this assignment :pray:
+PHP version 5.6.40 and MySql 5.6
 
